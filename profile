@@ -75,7 +75,7 @@ fi
 
 # Setup the PATH.
 PATH=~/.dotFiles/profile/bin:$PATH
-PATH=/opt/homebrew/opt/mysql@5.7/bin/:$PATH 
+PATH=/opt/homebrew/opt/mysql@8.0/bin/:$PATH 
 export PATH
 
 # Setup a colorized prompt, the way I like it
