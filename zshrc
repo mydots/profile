@@ -130,3 +130,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 # export AWS_PROFILE=dev
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
