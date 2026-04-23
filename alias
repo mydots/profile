@@ -214,3 +214,5 @@ function presign() {
   aws s3 cp $1 s3://frankywahl/$1
   AWS_REGION=$(aws s3api get-bucket-location --bucket frankywahl | jq -r '.LocationConstraint' | sed 's/null/us-east-1/g') aws s3 presign s3://frankywahl/$1
 }
+
+alias opencode='docker run -it --rm --volume ~/.local/share/opencode:/root/.local/share/opencode --volume `pwd`:/app --workdir /app --volume ~/.config/opencode:/root/.config/opencode ghcr.io/anomalyco/opencode'
